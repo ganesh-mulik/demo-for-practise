@@ -1,3 +1,29 @@
 <!-- attribute directives -->
  <div [ngClass]="{'active': isActive, 'inactive': !isActive}">This will appear when ngClass is active..</div>
+ <div [ngStyle]="{'background-color':backgroundColor,'font-size.px':fontSize}">Style applied</div>
+ <input [(ngModel)]="name" type="text" placeholder="are you idiot?">
  <button (click)="toggleActive()">Toggle</button>
+ <h3>{{name}}</h3>
+ <!-- structural directives -->
+  <br>
+  @if(first>second){
+    <div>if value in If is true then 'If' will work</div>
+  }
+  <br>
+  @for(num of tableOfTwo; track num){
+    <li>{{num}}</li>
+  }
+  <br>
+  @switch(dept){
+    @case ('mca') {
+        <li>ohh yure post graduate, great!!</li>
+    }
+    @case ('bca') {
+        <li>ohh yure graduate, great!!</li>
+    }
+    @default {
+        <li>Enter graduate or post graduate degree</li>
+    }
+  }
+
+  
