@@ -1,0 +1,11 @@
+.active{
+    display:block;
+    height: 50px;
+    width: 100%;
+    background-color: aquamarine;
+    font-size: 20px;
+    font-weight: bold;
+}
+.inactive{
+    display:none;
+}
